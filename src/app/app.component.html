@@ -1,0 +1,23 @@
+<!-- Scenario 1-->
+<!-- <p>Hello I am Parent/Root component</p>
+
+<input type="text" #templateRefVariable (keyup.enter)="passDatatoChildComponent(templateRefVariable)">
+<app-child [inputParam]="strValueFromParentComp" ></app-child>
+<hr>
+<app-child [inputEmpNameArray]="empNamesArray"></app-child>
+ -->
+
+<!-- Scenario 2-->
+ <!-- <p>Hello I am Parent/Root component</p>
+ <input type="text" #templateRefVariable (keyup.enter)="passDatatoChildComponent(templateRefVariable.value)">
+  <hr>
+ <app-child [txtboxVal]="inputVal"></app-child>
+  -->
+
+ <!-- Scenario 3-->
+  <p>Hello I am Parent/Root component</p>
+ <input type="text" #templateRefVariable>
+ <button (click)="passDatatoChildComponent(templateRefVariable.value)">Send text box val to child component</button>
+  <hr>
+ <app-child [txtboxVal]="inputVal"></app-child>
+ 
